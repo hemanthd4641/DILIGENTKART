@@ -1,33 +1,42 @@
+You are a senior full-stack solution architect AI
+Generate a complete Technical Architecture Documentation for my project.
 
-Technical Architecture Documentation
-it should include
+Project Name is DeligentKart
 
-System Overview
+Goal is to Build a fully functional, production-ready e-commerce website that enables users to explore products, view details, add/remove items to cart, and manage their shopping cart persistently.
 
-System Components
+Tech Stack used is 
 
-Architecture Diagram (text-based)
+ React.js with Hooks, Context API, Axios, Tailwind CSS for frontend
 
-Technology Stack & Dependencies
+Node.js + Express.js for backend
 
-Data Flow Description
+MongoDB Atlas as database
 
-REST API Design (with endpoints and payloads)
+Your task is to produce a complete Technical Architecture Documentation that includes the foloowing
 
-Database Schema (Mongoose models)
+System Overview – brief project summary
 
-State Management Plan (Context API)
+High-Level Architecture Diagram – describe in text or Mermaid syntax the interaction between frontend, backend, and database
 
-Deployment Instructions
+Component Architecture – explain each key component (React UI, API layer, DB models, controllers, routes)
+
+Data Flow Diagram – explain how data moves between client, API, and DB
+
+Database Design – define collections, sample schema, and relationships
+
+API Endpoints Design – list REST endpoints with request/response examples
+
+Scalability and Future Enhancements – mention improvements for authentication, payments, admin panel, etc.
 
 Security and Optimization Notes
-# Technical Architecture Documentation
+Technical Architecture Documentation
 
-## Overview
+Overview
 
 Deligentkart is a full-featured e-commerce platform built using the MERN stack (MongoDB, Express.js, React, Node.js). The architecture follows a client-server model with a RESTful API design pattern.
 
-## System Architecture Diagram
+System Architecture Diagram
 
 ```
 ┌─────────────────┐    HTTP/API    ┌──────────────────┐    Database    ┌──────────────┐
@@ -43,16 +52,16 @@ Deligentkart is a full-featured e-commerce platform built using the MERN stack (
 └─────────────────┘                └──────────────────┘                └──────────────┘
 ```
 
-## Frontend Architecture
+Frontend Architecture
 
-### Technologies Used
+Technologies Used
 - **React.js**: Component-based UI library
 - **Tailwind CSS**: Utility-first CSS framework
 - **React Router**: Declarative routing for React
 - **Context API**: State management solution
 - **Axios**: HTTP client for API requests
 
-### Component Structure
+Component Structure
 ```
 App
 ├── CartContext (State Management)
