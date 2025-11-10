@@ -132,11 +132,11 @@ Build a complete, production-ready, and fully functional codebase for my project
 Project Overview:
 Project Name: DeligentKart
 Goal: Create a responsive, modern, and production-ready E-Commerce web application where users can browse products, view product details, add/remove items to a shopping cart, and manage their cart persistently.
- Tech Stack:
+ 
+Tech Stack
+
 Frontend: React.js (with Hooks, Context API for cart state management, Axios for REST calls, and Tailwind CSS for styling)
 Backend: Node.js + Express.js (REST API architecture)
 Database: MongoDB Atlas (Mongoose ORM)
- Expected Output:
-Fully functional codebase with all folders and files implemented.
-Ready to run using:
+Expected Output should be Fully functional codebase with all folders and files implemented.
 
