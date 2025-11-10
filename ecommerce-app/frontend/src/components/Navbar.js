@@ -1,12 +1,20 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
+import { useAuth } from '../context/AuthContext';
 
 const Navbar = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const { cartItems } = useCart();
+  const { user, logout } = useAuth();
   
   const cartCount = cartItems.reduce((total, item) => total + item.qty, 0);
+  
+  const handleLogout = () => {
+    logout();
+    navigate('/');
+  };
   
   return (
     <nav className="bg-white shadow-md">
@@ -39,6 +47,30 @@ const Navbar = () => {
                 </span>
               )}
             </Link>
+            
+            {user ? (
+              <div className="flex items-center space-x-4">
+                <Link to="/profile" className="text-gray-700 hover:text-indigo-600 transition-colors">
+                  Profile
+                </Link>
+                <span className="text-gray-700">Hello, {user.name}</span>
+                <button 
+                  onClick={handleLogout}
+                  className="text-gray-700 hover:text-indigo-600 transition-colors"
+                >
+                  Logout
+                </button>
+              </div>
+            ) : (
+              <div className="flex items-center space-x-4">
+                <Link to="/login" className="text-gray-700 hover:text-indigo-600 transition-colors">
+                  Login
+                </Link>
+                <Link to="/register" className="text-gray-700 hover:text-indigo-600 transition-colors">
+                  Register
+                </Link>
+              </div>
+            )}
           </div>
         </div>
       </div>
