@@ -1,0 +1,142 @@
+			INITIAL PROMPT FOR PROJECT SETUP
+
+
+You are an expert full-stack web developer. Build a complete, production-ready e-commerce web application using the MERN stack (MongoDB Atlas, Express.js, React.js, Node.js).
+
+Core Requirements
+Frontend: React.js (with functional components, Hooks, Context API for cart state management, and Axios for API calls).
+
+Backend: Node.js with Express.js for RESTful APIs.
+
+Database: MongoDB Atlas for storing product data, cart items, and user info (optional).
+
+Styling: Use Tailwind CSS for a clean, responsive, and modern UI.
+
+Project must be structured into frontend/ and backend/ directories.
+
+Functional Features
+1. Product Management
+
+Display all available products on the homepage.
+
+Product data (title, image, price, description, category, rating) should be stored in MongoDB.
+
+Each product card should include "View Details" and "Add to Cart" buttons.
+
+2. Product Details Page
+
+When a user clicks a product, show its full details: image, description, price, and “Add to Cart” button.
+
+3. Shopping Cart
+
+Add/remove items dynamically.
+
+Update quantity in the cart.
+
+Display total price, and item count.
+
+Maintain cart state globally using React Context API or Redux Toolkit.
+
+4. Responsive UI
+
+Fully responsive layout (mobile, tablet, desktop) using Tailwind CSS.
+
+Include a simple navigation bar with logo, home link, and cart icon showing number of items.
+
+5. Backend API Endpoints
+
+GET /api/products → Fetch all products.
+
+GET /api/products/:id → Fetch single product details.
+
+6. Database
+
+Use MongoDB Atlas connection string in .env file.
+
+Product schema: { name, description, price, image, category, rating }.
+
+Seed initial data using a script or static JSON import.
+
+
+
+
+
+Prompt for technical architecture
+
+
+You are a senior full-stack solution architect AI
+Generate a complete Technical Architecture Documentation for my project.
+
+Project Name is DeligentKart
+
+Goal is to Build a fully functional, production-ready e-commerce website that enables users to explore products, view details, add/remove items to cart, and manage their shopping cart persistently.
+
+Tech Stack used is 
+
+React.js with Hooks, Context API, Axios, Tailwind CSS for frontend
+
+Node.js + Express.js for backend
+
+MongoDB Atlas as database
+
+Your task is to produce a complete Technical Architecture Documentation that includes the foloowing
+
+System Overview – brief project summary
+
+High-Level Architecture Diagram – describe in text or Mermaid syntax the interaction between frontend, backend, and database
+
+Component Architecture – explain each key component (React UI, API layer, DB models, controllers, routes)
+
+Data Flow Diagram – explain how data moves between client, API, and DB
+
+Database Design – define collections, sample schema, and relationships
+
+API Endpoints Design – list REST endpoints with request/response examples
+
+Scalability and Future Enhancements – mention improvements for authentication, payments, admin panel, etc.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Prompt for code base
+
+
+
+You are a professional full-stack developer AI.
+Build a complete, production-ready, and fully functional codebase for my project as described below.
+Project Overview:
+Project Name: DeligentKart
+Goal: Create a responsive, modern, and production-ready E-Commerce web application where users can browse products, view product details, add/remove items to a shopping cart, and manage their cart persistently.
+ Tech Stack:
+Frontend: React.js (with Hooks, Context API for cart state management, Axios for REST calls, and Tailwind CSS for styling)
+Backend: Node.js + Express.js (REST API architecture)
+Database: MongoDB Atlas (Mongoose ORM)
+ Expected Output:
+Fully functional codebase with all folders and files implemented.
+Ready to run using:
+
