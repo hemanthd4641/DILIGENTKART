@@ -19,6 +19,13 @@ A full-featured e-commerce platform built with the MERN stack (MongoDB, Express.
 - **State Management**: React Context API
 - **Proxy**: http-proxy-middleware for API requests
 
+## Documentation
+
+Comprehensive project documentation is available in the `docs/` folder:
+
+- [Project Documentation](docs/PROJECT_DOCUMENTATION.md) — architecture overview, run instructions, developer guide, and next steps.
+- [API Reference](docs/API_REFERENCE.md) — detailed API endpoints and examples.
+
 ## Project Structure
 
 ```
