@@ -1,0 +1,28 @@
+Complete frontend (React + Tailwind + Axios + Context API)
+
+Complete backend (Node + Express + MongoDB)
+
+Folder structure:
+
+ecommerce-app/
+├── backend/
+│   ├── server.js
+│   ├── config/db.js
+│   ├── models/productModel.js
+│   ├── routes/productRoutes.js
+│   ├── controllers/productController.js
+│   └── data/products.js
+└── frontend/
+    ├── src/
+    │   ├── App.js
+    │   ├── index.js
+    │   ├── context/CartContext.js
+    │   ├── components/
+    │   │   ├── Navbar.js
+    │   │   ├── ProductCard.js
+    │   │   ├── ProductDetails.js
+    │   │   └── Cart.js
+    │   ├── pages/
+    │   │   ├── Home.js
+    │   │   └── NotFound.js
+    │   └── styles/App.css
