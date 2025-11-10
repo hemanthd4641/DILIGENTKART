@@ -1,0 +1,55 @@
+You are an expert full-stack web developer. Build a complete, production-ready e-commerce web application using the MERN stack (MongoDB Atlas, Express.js, React.js, Node.js).
+
+Core Requirements
+Frontend: React.js (with functional components, Hooks, Context API for cart state management, and Axios for API calls).
+
+Backend: Node.js with Express.js for RESTful APIs.
+
+Database: MongoDB Atlas for storing product data, cart items, and user info (optional).
+
+Styling: Use Tailwind CSS for a clean, responsive, and modern UI.
+
+Project must be structured into frontend/ and backend/ directories.
+
+Functional Features
+1. Product Management
+
+Display all available products on the homepage.
+
+Product data (title, image, price, description, category, rating) should be stored in MongoDB.
+
+Each product card should include "View Details" and "Add to Cart" buttons.
+
+2. Product Details Page
+
+When a user clicks a product, show its full details: image, description, price, and “Add to Cart” button.
+
+3. Shopping Cart
+
+Add/remove items dynamically.
+
+Update quantity in the cart.
+
+Display total price, and item count.
+
+Maintain cart state globally using React Context API or Redux Toolkit.
+
+4. Responsive UI
+
+Fully responsive layout (mobile, tablet, desktop) using Tailwind CSS.
+
+Include a simple navigation bar with logo, home link, and cart icon showing number of items.
+
+5. Backend API Endpoints
+
+GET /api/products → Fetch all products.
+
+GET /api/products/:id → Fetch single product details.
+
+6. Database
+
+Use MongoDB Atlas connection string in .env file.
+
+Product schema: { name, description, price, image, category, rating }.
+
+Seed initial data using a script or static JSON import.
