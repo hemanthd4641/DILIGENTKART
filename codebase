@@ -26,3 +26,31 @@ ecommerce-app/
     │   │   ├── Home.js
     │   │   └── NotFound.js
     │   └── styles/App.css
+
+Backend Codebase (ecommerce-app/backend):
+server.js - Main entry point with Express.js setup
+config/db.js - Database connection configuration
+models/productModel.js - Product schema definition
+routes/productRoutes.js - API route definitions
+controllers/productController.js - Request handlers
+data/products.js - Sample product data
+seeder.js - Data seeding script
+
+Frontend Codebase (ecommerce-app/frontend):
+src/App.js - Main application component
+src/index.js - Entry point
+src/context/CartContext.js - Cart state management
+src/components/Navbar.js - Navigation bar
+src/components/ProductCard.js - Product display component
+src/components/ProductDetails.js - Product detail view
+src/components/Cart.js - Shopping cart
+src/pages/Home.js - Homepage
+src/pages/NotFound.js - 404 page
+
+The project is already fully implemented with:
+RESTful API for product management
+React frontend with responsive UI
+Cart functionality with persistent state
+MongoDB integration
+Proper routing and error handling
+
