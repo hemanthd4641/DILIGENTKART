@@ -1,0 +1,43 @@
+version: '3.8'
+services:
+  mongo:
+    image: mongo:6.0
+    restart: unless-stopped
+    volumes:
+      - mongo-data:/data/db
+    ports:
+      - '27017:27017'
+
+  backend:
+    build:
+      context: .
+      dockerfile: ecommerce-app/backend/Dockerfile
+    environment:
+      - NODE_ENV=development
+      - PORT=5000
+      - MONGO_URI=mongodb://mongo:27017/diligentkart
+    ports:
+      - '5000:5000'
+    depends_on:
+      - mongo
+    volumes:
+      - ./ecommerce-app/backend:/usr/src/app
+
+  frontend:
+    build:
+      context: .
+      dockerfile: ecommerce-app/frontend/Dockerfile
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+      - REACT_APP_API_URL=http://localhost:5000
+    ports:
+      - '3000:3000'
+    depends_on:
+      - backend
+    volumes:
+      - ./ecommerce-app/frontend:/app
+
+volumes:
+  mongo-data:
+    driver: local
