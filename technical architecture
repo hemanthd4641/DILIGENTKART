@@ -1,0 +1,23 @@
+
+Technical Architecture Documentation
+it should include
+
+System Overview
+
+System Components
+
+Architecture Diagram (text-based)
+
+Technology Stack & Dependencies
+
+Data Flow Description
+
+REST API Design (with endpoints and payloads)
+
+Database Schema (Mongoose models)
+
+State Management Plan (Context API)
+
+Deployment Instructions
+
+Security and Optimization Notes
